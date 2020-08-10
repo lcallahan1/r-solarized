@@ -16,9 +16,13 @@
 .ace_storage {
   color: #93A1A1
 }
+terminal.focus .ace_cursor {
+  opacity: 1 !important;
+}
 .ace_cursor,
 .ace_string.ace_regexp {
-  color: #D30102
+  color: #D30102 !important;
+  opacity: 0.65 !important;
 }
 .ace_marker-layer .ace_active-line,
 .ace_marker-layer .ace_selection {
@@ -129,7 +133,7 @@
 }
 .terminal.xterm-cursor-style-block.focus:not(.xterm-cursor-blink-on) .terminal-cursor {
   background-color: #CCC;
-  color: #1e1e1e;
+  color: #fff;
 }
 .terminal.focus.xterm-cursor-style-bar:not(.xterm-cursor-blink-on) .terminal-cursor::before,
 .terminal.focus.xterm-cursor-style-underline:not(.xterm-cursor-blink-on) .terminal-cursor::before {
@@ -138,7 +142,7 @@
   background-color: #CCC;
 }
 .terminal:not(.focus) .terminal-cursor {
-  outline: 1px solid #CCC;
+  outline: 1px solid #FFF;
   outline-offset: -1px;
 }
 .terminal .xterm-selection div {
